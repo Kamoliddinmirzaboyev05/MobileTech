@@ -22,30 +22,85 @@
             <form action="#">
               <div class="input-data fam">
                 <p>Familiya</p>
-                <input type="text">
+                <input type="text" />
               </div>
               <div class="input-data ism">
                 <p>Ism</p>
-                <input type="text">
+                <input type="text" />
               </div>
               <div class="input-data raqam">
                 <p>Telefon raqam</p>
-                <input type="text">
+                <input type="text" />
               </div>
               <div class="input-data email">
                 <p>E-mail</p>
-                <input type="email">
+                <input type="email" />
               </div>
               <div class="input-data parol">
                 <p>Parol</p>
-                <input type="text">
+                <input type="text" />
               </div>
               <div class="input-data re-parol">
                 <p>Parolni tasdiqlang</p>
-                <input type="text">
+                <input type="text" />
               </div>
               <button class="submit">Ro'yxatdan o'tish</button>
             </form>
+          </div>
+        </div>
+        <div class="modal-cart">
+          <div class="modal-header">
+            <div class="close-cart close">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <h2 class="modal-title">Basket</h2>
+            <div class="hr"></div>
+          </div>
+
+          <div class="product-row">
+            <div class="product-img">
+              <img src="" id="cartProductImg" alt="" />
+            </div>
+            <div class="product-data">
+              <p id="cartProductName"></p>
+              <p id="cartProductPrice"></p>
+            </div>
+          </div>
+          <div class="product-row">
+            <div class="product-img">
+              <img src="" id="cartProductImg" alt="" />
+            </div>
+            <div class="product-data">
+              <p id="cartProductName"></p>
+              <p id="cartProductPrice"></p>
+            </div>
+          </div>
+          <div class="product-row">
+            <div class="product-img">
+              <img src="" id="cartProductImg" alt="" />
+            </div>
+            <div class="product-data">
+              <p id="cartProductName"></p>
+              <p id="cartProductPrice"></p>
+            </div>
+          </div>
+          <div class="product-row">
+            <div class="product-img">
+              <img src="" id="cartProductImg" alt="" />
+            </div>
+            <div class="product-data">
+              <p id="cartProductName"></p>
+              <p id="cartProductPrice"></p>
+            </div>
+          </div>
+          <div class="product-row">
+            <div class="product-img">
+              <img src="" id="cartProductImg" alt="" />
+            </div>
+            <div class="product-data">
+              <p id="cartProductName"></p>
+              <p id="cartProductPrice"></p>
+            </div>
           </div>
         </div>
         <div class="container">
@@ -63,8 +118,13 @@
             <div class="search">
               <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-            <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="cart" id="cartIcon">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
             <div class="user"><i class="fa-regular fa-user"></i></div>
+            <div class="like-product" id="likeIcon">
+              <i class="fa-regular fa-heart"></i>
+            </div>
           </div>
         </div>
       </nav>
@@ -81,7 +141,7 @@
           </h2>
           <div class="wrapper">
             <div class="laptop">
-              <div class="main-img" >
+              <div class="main-img">
                 <img src="img/main.png" id="mainImg" alt="" />
               </div>
               <div class="item-imgs">
@@ -133,7 +193,11 @@
                     <img src="img/selected.svg" class="gray-select" alt="" />
                   </div>
                   <div class="brown">
-                    <img src="img/selected.svg" class="brown-select none" alt="" />
+                    <img
+                      src="img/selected.svg"
+                      class="brown-select none"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
@@ -216,13 +280,14 @@
                   <h2>12</h2>
                   <p>Months</p>
                 </div>
-                <div class= "month month18">
+                <div class="month month18">
                   <h2>18</h2>
                   <p>Months</p>
                 </div>
               </div>
               <p class="price-credit">
-                <span id="credit-price">$433.00</span><span class="gray-text">/Month</span>
+                <span id="credit-price">$433.00</span
+                ><span class="gray-text">/Month</span>
               </p>
               <button class="buy-now">Buy Now</button>
               <button class="add">Add to cart</button>
@@ -295,7 +360,7 @@
                     <p>Add to cart</p>
                   </button>
                   <div class="heart">
-                    <i class="fa-regular fa-heart like-heart" ></i>
+                    <i class="fa-regular fa-heart like-heart"></i>
                   </div>
                 </div>
               </div>
@@ -681,10 +746,10 @@
               <p>Privacy Policy</p>
             </li>
             <li>
-              <p>Terms and Conditions </p>
+              <p>Terms and Conditions</p>
             </li>
             <li>
-              <p>Imprint </p>
+              <p>Imprint</p>
             </li>
           </ul>
         </div>

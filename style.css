@@ -54,7 +54,7 @@ nav {
   width: 400px;
   height: 550px;
 }
-.close{
+.close {
   width: 25px;
   display: flex;
   align-items: center;
@@ -67,7 +67,7 @@ nav {
   right: 20px;
   font-size: 24px;
 }
-.close:hover{
+.close:hover {
   background-color: #dadada;
   color: red;
 }
@@ -105,7 +105,91 @@ nav {
   border-radius: 8px;
 }
 /* Modal oyna tugadi */
+/* Like modal oyna boshlandi*/
+.like-product,
+.search,
+.cart,
+.user {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.like-product:hover,
+.user:hover,
+.cart:hover,
+.search:hover {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+.like-product:active,
+.user:active,
+.cart:active,
+.search:active {
+  background-color: #bdbdbd;
+  padding: 10px;
+}
 
+.modal-cart {
+  width: 400px;
+  height: 300px;
+  z-index: 25;
+  position: fixed;
+  top: 85px;
+  padding: 15px;
+  right: -2000px;
+  background-color: #fafafa;
+  border-radius: 16px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-shadow: -4px 4px 20px 2px #7171711f;
+}
+.close-cart{
+  top: 15px;
+  right: 15px;
+}
+.show{
+  right: 20px !important;
+}
+.modal-title {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.hr {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #afafaf;
+}
+.product-row {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  height: 60px;
+  box-shadow: -2px 2px 15px -1px #7171711f;
+  display: flex;
+  align-items: cover;
+  gap: 20px;
+  border-radius: 8px;
+  justify-content: start;
+}
+.product-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+.product-img img {
+  width: 100%;
+}
+
+/* like modal oyna tugadi */
 nav .container {
   display: flex;
   justify-content: space-between;
@@ -149,7 +233,7 @@ nav .container {
 .none {
   display: none;
 }
-.typePay{
+.typePay {
   font-size: 12px;
   padding: 10px 0;
   color: #444444;
@@ -442,7 +526,12 @@ input {
   border-radius: 8px;
   margin-bottom: 8px;
 }
-
+.add:hover{
+  background-color: #ebebeb;
+}
+.add:active{
+  background-color: #cecece;
+}
 /* styline section2  */
 .section2 .container {
   padding-top: 50px;

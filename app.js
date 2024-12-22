@@ -118,24 +118,54 @@ window.addEventListener("click", (e) => {
     });
   }
 });
-likeHeart.forEach((heart)=>{
+
+// Like bosish
+
+likeHeart.forEach((heart) => {
   let pasLike = 0;
   heart.addEventListener("click", () => {
     if (pasLike == 0) {
       heart.setAttribute("class", "fa-solid fa-heart");
       pasLike = 1;
-    }else if(pasLike == 1){
+    } else if (pasLike == 1) {
       heart.setAttribute("class", "fa-regular fa-heart");
       pasLike = 0;
     }
   });
-})
-likeHeart.addEventListener("click", () => {
-  if (pasLike == 0) {
-    likeHeart.setAttribute("class", "fa-solid fa-heart");
-    pasLike = 1;
-  }else if(pasLike == 1){
-    likeHeart.setAttribute("class", "fa-regular fa-heart");
-    pasLike = 0;
+});
+
+// Add product to product modal
+
+let cartProduct = document.getElementById("cartIcon"),
+  closeCart = document.querySelector(".close-cart"),
+  addCart = document.querySelector(".add"),
+  productName = document.querySelector(".product"),
+  cartProductName = document.querySelector("#cartProductName"),
+  cartProductPrice = document.querySelector("#cartProductPrice"),
+  cartProductImg = document.querySelector("#cartProductImg"),
+  cartModal = document.querySelector(".modal-cart");
+
+addCart.addEventListener("click", () => {
+  cartProductName.textContent = productName.textContent.split("").splice(0, 30).join("");
+  
+  cartProductPrice.textContent = price.textContent;
+  cartProductImg.setAttribute("src", "img/main.png");
+});
+
+// Cart modal
+
+cartProduct.addEventListener("click", () => {
+  cartModal.classList.add("show");
+});
+closeCart.addEventListener("click", () => {
+  cartModal.classList.remove("show");
+});
+window.addEventListener("click", (e) => {
+  if (e.target.classList.contains("modal-back")) {
+    modalBack.style.top = "-1000px";
+    modal.style.top = "-1000px";
+    inputs.forEach((item) => {
+      item.value = "";
+    });
   }
 });
