@@ -146,11 +146,12 @@ nav {
   overflow-x: hidden;
   box-shadow: -4px 4px 20px 2px #7171711f;
 }
-.close-cart{
+.close-cart {
   top: 15px;
   right: 15px;
 }
-.show{
+
+.show {
   right: 20px !important;
 }
 .modal-title {
@@ -179,11 +180,36 @@ nav {
   gap: 20px;
   border-radius: 8px;
   justify-content: start;
+  position: relative;
+}
+.delete,
+.delete1,
+.delete2,
+.delete3,
+.delete4 {
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+}
+.delete:hover i,
+.delete1:hover i,
+.delete2:hover i,
+.delete3:hover i,
+.delete4:hover i {
+  color: red;
 }
 .product-img {
   width: 60px;
   height: 60px;
   object-fit: contain;
+}
+#mainRow,
+#row1,
+#row2,
+#row3,
+#row4,
+#row5 {
+  display: none;
 }
 .product-img img {
   width: 100%;
@@ -526,10 +552,10 @@ input {
   border-radius: 8px;
   margin-bottom: 8px;
 }
-.add:hover{
+.add:hover {
   background-color: #ebebeb;
 }
-.add:active{
+.add:active {
   background-color: #cecece;
 }
 /* styline section2  */
@@ -596,7 +622,7 @@ input {
 }
 .block {
   display: flex;
-  align-items: center;
+  align-items: cover;
   justify-content: space-between;
   padding-top: 30px;
   width: 100%;
