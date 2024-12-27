@@ -42,7 +42,6 @@ credit.addEventListener("click", () => {
 gray.addEventListener("click", () => {
   graySelect.classList.remove("none");
   brownSelect.classList.add("none");
-  alert(buyNow.checked);
 });
 brown.addEventListener("click", () => {
   brownSelect.classList.remove("none");
